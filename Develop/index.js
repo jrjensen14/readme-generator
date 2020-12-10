@@ -1,3 +1,7 @@
+
+const inquirer = require('inquirer');
+console.log(inquirer);
+
 // array of questions for user
 const questions = [
 
