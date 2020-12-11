@@ -1,7 +1,9 @@
 
+const fs = require('fs');
 const inquirer = require('inquirer');
 const Choices = require('inquirer/lib/objects/choices');
 //console.log(inquirer)
+
 const promptReadmeQuestions = () => {
     return inquirer.prompt ([
         {
@@ -19,13 +21,13 @@ const promptReadmeQuestions = () => {
         },
         {
             type: 'input',
-            name: 'github',
-            message: 'Enter GitHub username (Required)',
-            validate: githubInput => {
-                if (githubInput) {
+            name: 'link',
+            message: 'Enter GitHub link (Required)',
+            validate: linkInput => {
+                if (linkInput) {
                     return true;
                 } else {
-                    console.log('Please enter your GitHub username');
+                    console.log('Please enter your GitHub link');
                     return false;
                 }
             }
@@ -84,11 +86,11 @@ const promptReadmeQuestions = () => {
             default: false,
             choices: ['MIT','ISC','GNU Public License v3.0','Apache License 2.0', 'The Unlicense']
         },
-        {
-            type: 'input',
-            name: 'link',
-            message: 'Enter the Github link to your project?',
-        },
+        // {
+        //     type: 'input',
+        //     name: 'link',
+        //     message: 'Enter the Github link to your project?',
+        // },
     ]);
 };
 promptReadmeQuestions().then(answers => console.log(answers));
