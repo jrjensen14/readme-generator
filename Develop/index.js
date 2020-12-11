@@ -7,22 +7,54 @@ const promptReadmeQuestions = () => {
         {
             type: 'input',
             name: 'title',
-            message: 'What is the title of your project?',
+            message: 'What is the title of your project? (Required)',
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log ('Please enter your name!');
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
             name: 'github',
-            message: 'Enter GitHub username.',
+            message: 'Enter GitHub username (Required)',
+            validate: githubInput => {
+                if (githubInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your GitHub username');
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
             name: 'email',
-            message: 'Enter email address.',
+            message: 'Enter email address (Required)',
+            validate: emailInput => {
+                if (emailInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your email address');
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
             name: 'description',
-            message: 'Provice a description of your project?',
+            message: 'Provide a description of your project? (Required)',
+            validate: descriptionInput => {
+                if (descriptionInput) {
+                    return true;
+                } else {
+                    console.log('Please enter a description');
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
@@ -30,22 +62,27 @@ const promptReadmeQuestions = () => {
             message: 'Steps required to install your project?',
         },
         {
-            type: 'input',
-            name: 'usage',
+            type: 'confirm',
+            name: 'confirmUsage',
             message: 'do you have a screenshot of your project?',
-            default: false
+            default: true
         },
+        // {
+        //     type: 'input',
+        //     name: 'usage',
+        //     message: 
+        // }
         {
             type: 'input',
             name: 'contributors',
             message: 'who contributed on your project?',
         },
         {
-            type: 'input',
+            type: 'checkbox',
             name: 'licence',
             message: 'do you have a licence for your project?',
             default: false,
-            choices: ['','','','']
+            choices: ['MIT','ISC','GNU Public License v3.0','Apache License 2.0', 'The Unlicense']
         },
         {
             type: 'input',
