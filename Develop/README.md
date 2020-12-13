@@ -1,9 +1,7 @@
-// function to generate markdown for README
-function generateMarkdown(data) {
-  return `
+
   <img src="https://img.shields.io/badge/Readme-generator-bright%20green">
   
-  # ${data.title}
+  # reademe
 
   ## Description
 
@@ -17,26 +15,22 @@ function generateMarkdown(data) {
   * [Questions](#questioins)
   
   ## Installation
-  ${data.installation}
+  jj
 
   ## Usage
-  ${data.usage}
+  undefined
 
   ## License
-  ${data.license}
+  undefined
 
   ## Contributing
-  ${data.contibutors}
+  undefined
 
   ## Test
-  ${data.test}
+  undefined
 
   ## Questions?
   If you have any questions please reach out to me at:
-  GitHub - ${data.link}
-  Email - ${data.email}
+  GitHub - @gh
+  Email - @gmail
 
-`;
-}
-
-module.exports = generateMarkdown;
