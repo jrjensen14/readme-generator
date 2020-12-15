@@ -69,7 +69,7 @@ const promptReadmeQuestions = () => {
       type: 'confirm',
       name: 'usage',
       message: 'do you have a screenshot of your project?',
-      default: true
+      default: false
     },
     // {
     //     type: 'input',
@@ -80,6 +80,11 @@ const promptReadmeQuestions = () => {
       type: 'input',
       name: 'contributors',
       message: 'who contributed on your project?',
+    },
+    {
+      type: 'input',
+      name: 'test',
+      message: 'Do you have a test of your project?',
     },
     {
       type: 'checkbox',

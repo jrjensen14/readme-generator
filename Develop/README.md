@@ -1,10 +1,10 @@
 
   <img src="https://img.shields.io/badge/Liciense-MIT-bright%20green">
 
-  # jj
+  # README Generator
 
   ## Description
-  jj
+  Create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer Package. This allows the project creator to devote more time working on the project.
 
   ## Table of Contents
   * [Description](#description)
@@ -16,7 +16,7 @@
   * [Questions](#questions)
   
   ## Installation
-  jj
+  Install Inquirer Package from:  https://www.npmjs.com/package/inquirer 
 
   ## Usage
   false
@@ -25,14 +25,14 @@
   MIT
 
   ## Contributing
-  jj
+  Jessica Jensen
 
   ## Test
-  undefined
+  no
 
   ## Questions
   If you have any questions please reach out to me at:
-  GitHub - [jj](https://github.com/jj) 
+  GitHub - [https://github.com/jrjensen14](https://github.com/https://github.com/jrjensen14) 
   <break>
-  Email - [jj](mailto:jj)
+  Email - [jrjensen14@gmail.com](mailto:jrjensen14@gmail.com)
 
