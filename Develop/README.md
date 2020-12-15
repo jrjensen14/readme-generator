@@ -1,9 +1,10 @@
 
-  <img src="https://img.shields.io/badge/Readme-generator-bright%20green">
-  
-  # reademe
+  <img src="https://img.shields.io/badge/Liciense-MIT-bright%20green">
+
+  # jj
 
   ## Description
+  jj
 
   ## Table of Contents
   * [Description](#description)
@@ -12,25 +13,26 @@
   * [License](#licience)
   * [Contributing](#contributing)
   * [Tests](#test)
-  * [Questions](#questioins)
+  * [Questions](#questions)
   
   ## Installation
   jj
 
   ## Usage
-  undefined
+  false
 
   ## License
-  undefined
+  MIT
 
   ## Contributing
-  undefined
+  jj
 
   ## Test
   undefined
 
-  ## Questions?
+  ## Questions
   If you have any questions please reach out to me at:
-  GitHub - @gh
-  Email - @gmail
+  GitHub - [jj](https://github.com/jj) 
+  <break>
+  Email - [jj](mailto:jj)
 

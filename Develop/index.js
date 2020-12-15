@@ -5,6 +5,7 @@ const Choices = require('inquirer/lib/objects/choices');
 const generateMarkdown = require('./utils/generateMarkdown')
 //console.log(inquirer)
 
+// array of questions for user
 const promptReadmeQuestions = () => {
   return inquirer.prompt([
     {
@@ -66,7 +67,7 @@ const promptReadmeQuestions = () => {
     },
     {
       type: 'confirm',
-      name: 'confirmUsage',
+      name: 'usage',
       message: 'do you have a screenshot of your project?',
       default: true
     },
@@ -82,7 +83,7 @@ const promptReadmeQuestions = () => {
     },
     {
       type: 'checkbox',
-      name: 'licence',
+      name: 'license',
       message: 'do you have a licence for your project?',
       default: false,
       choices: ['MIT', 'ISC', 'GNU Public License v3.0', 'Apache License 2.0', 'The Unlicense']
@@ -92,6 +93,8 @@ const promptReadmeQuestions = () => {
 promptReadmeQuestions().then(answers => {
 
   console.log(answers)
+
+  // function to write README file
   const data = generateMarkdown(answers)
   fs.writeFile("README.md", data, (err, data) => {
     if (err) {
@@ -101,19 +104,22 @@ promptReadmeQuestions().then(answers => {
   })
 });
 
-// array of questions for user
-const questions = [
-
-];
-
-// function to write README file
-function writeToFile(fileName, data) {
-}
-
 // function to initialize program
 function init() {
 
 }
 
+
+// const questions = [
+// ];
+
+
+// function writeToFile(fileName, data) {
+// }
+
+
+
 // function call to initialize program
 init();
+
+// ![Custom badge](https://img.shields.io/endpoint)
